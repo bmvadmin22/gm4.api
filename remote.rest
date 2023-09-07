@@ -1,0 +1,413 @@
+###
+GET https://botmanager-v2-api.herokuapp.com/
+
+###
+GET https://botmanager-v2-api.herokuapp.com/api/bots
+
+###
+GET https://bm-v2-api.onrender.com/api/bots
+
+###
+GET https://bm-v2-api.onrender.com/api/
+
+
+###
+PUT https://botmanager-v2-api.herokuapp.com/api/bot
+Content-Type: application/json
+
+{
+    "email":"testing@mail.com",
+    "location":"testing",
+    "error":"testing",
+    "status":true,
+    "requestedStatus":true
+}
+
+###
+GET https://botmanager-v2-api.herokuapp.com/api/bot/id/6050ce66f98c522ad8d10ffe
+
+
+
+###
+GET https://botmanager-v2-api.herokuapp.com/api/bot/email/vladimir@mail02.com
+
+
+###
+DELETE https://botmanager-v2-api.herokuapp.com/api/bot/id/605292cf9702ec003119479b
+
+
+###
+DELETE https://botmanager-v2-api.herokuapp.com/api/bot/email/mail@mail.ru
+
+
+###
+POST https://botmanager-v2-api.herokuapp.com/api/user
+Authorization: Basic dmxhZGltaXIudkBnbWFpbC5jb206dnZ2
+
+###
+POST https://bm-v2-api.onrender.com/api/user/me
+Authorization: Basic Ym1fdjJfYWRtaW5AcHJvdG9ubWFpbC5jb206dnZ2dg==
+
+###
+PUT https://bm-v2-api.onrender.com/api/user
+Content-Type: application/json
+
+{
+    "email": "maasheenu@gmail.com",
+    "password" : "password"
+}
+
+
+###
+PUT https://botmanager-v2-api.herokuapp.com/api/user
+Content-Type: application/json
+
+    {
+        "email": "vavan.v@gmail.com",
+        "password" : "vvvv",
+        "isAdmin": true
+    }
+
+
+###
+GET  https://botmanager-v2-api.herokuapp.com/api/bot/requestedStatus/vladimir@mail.com
+
+
+###
+POST https://botmanager-v2-api.herokuapp.com/api/bot/requestedStatus/vladimir@mail.com
+Content-Type: application/json
+
+{
+    "requestedStatus":true
+}
+
+
+###
+GET  https://botmanager-v2-api.herokuapp.com/api/bot/requestedStatus/vladimir@mail202.casom
+
+
+###
+GET https://botmanager-v2-api.herokuapp.com/api/files
+
+
+###
+GET https://botmanager-v2-api.herokuapp.com/api/file/express-handbook.pdf
+
+
+###
+DELETE https://botmanager-v2-api.herokuapp.com/api/delete/.txt
+
+###
+GET https://botmanager-v2-api.herokuapp.com/api/md5/get
+
+{
+    "key":"YG4I69OGDUGSZVQCAGYUYZKPTMG4I7FN",
+    "hd_id":"6050ce66f98c522ad8d10ffe",
+    "code":"ALBION",
+    "name":"Albion_Online.exe"
+}
+
+maasheenu@gmail.com
+
+###
+POST https://bm2.herokuapp.com/api/file/get
+Content-Type: application/json
+
+{
+    "code":"NWRLD",
+    "name":"launcher.exe"
+}
+
+###
+GET https://bm2.herokuapp.com/api/md5/61588602e09a640016ed6ff6
+
+###
+POST https://bm2.herokuapp.com/api/bot/days
+Content-Type: application/json
+
+{
+    "key":"8RRZL4Z1VP0OZHXZQ49WP0KPI080J3Z2",
+}
+
+
+###
+GET  https://gmv22api.herokuapp.com/api/bot/ping
+Content-Type: application/json
+
+{
+    "key":"B6DWJDXDGENNJSY8UB4DKO7QAN876HWZ",
+    "hd_id":"62eb9877304765520b587382fca8f48b"
+}
+
+
+100.20.92.101
+44.225.181.72
+44.227.217.144
+
+###
+GET https://100.20.92.101/api/
+
+###
+GET https://44.225.181.72/api/
+
+###
+GET https://44.227.217.144/api/
+
+
+###
+GET https://bm-v2-api.onrender.com/api/
+
+
+
+
+###
+GET https://bm-v2-api.onrender.com/api/bots
+
+
+###
+GET https://bm-v2-api.onrender.com/api/license/days
+Content-Type: application/json
+
+{
+    "key":"7E4NA3581M2OFL0RSUJ9P759PY1PCVRZ",
+    "hd_id":"6050ce66f98c522ad8d10ffe"
+}
+
+### GOOD ONE
+POST https://botmanager-v2-api.herokuapp.com/api/auth
+Authorization: Basic dmF2YW4udkBnbWFpbC5jb206dnZ2dg==
+
+###
+GET  https://bm-v2-api.onrender.com/api/license/days
+Content-Type: application/json
+
+{
+    "key":"MDNPJJWGM9F5OLM5N66XFKSIBVZKOQO9",
+    "hd_id":"a6186c9e7e305febaeb5262e987a86fa"
+}
+
+###
+POST  https://bm-v2-api.onrender.com/api/license/days_post
+Content-Type: application/json
+
+{
+    "key":"MDNPJJWGM9F5OLM5N66XFKSIBVZKOQO9",
+    "hd_id":"a6186c9e7e305febaeb5262e987a86fa"
+}
+
+###
+GET  https://bm-v2-api.onrender.com/api/bot/ping
+Content-Type: application/json
+
+{
+  "key":"MDNPJJWGM9F5OLM5N66XFKSIBVZKOQO9",
+    "hd_id":"a6186c9e7e305febaeb5262e987a86fa"
+}
+
+
+###
+GET https://bm-v2-api.onrender.com/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImlzQWN0aXZlIjp0cnVlLCJlbWFpbCI6ImJtX3YyX2FkbWluQHByb3Rvbm1haWwuY29tIiwibmlja25hbWUiOiJBZG1pbiBHb29kIE9uZSEiLCJwYXNzd29yZCI6IiQyYiQxMCRUUGN4NW0yZGNBLmFFVEZ6VW51US5lYk9TaTVjQlZEdHA5Mm1TdjZtbDZVQmFCNTlHNkRMQyIsImRldGFpbHMiOiJBZG1pbiB3aG8gaXMgd2F0Y2hpbmcgeW91LCBtb3JvbnMgLi4uIDopIiwiX192IjowLCJjb25maXJtYXRpb25Db2RlIjoiJDJiJDA1JDRDNE1XWDFHQXMzZUZiNzVTYkF3amU2eU80SVNSNUp6UFAvOGRYVlVHY3M3Wm80SEZxSm5xIiwiY29uZmlybWF0aW9uQ29kZUV4cGlyZURhdGUiOiIyMDIyLTExLTE5VDE3OjUzOjExLjY5MVoiLCJudW1iZXJPZkZhaWxlZExvZ2lucyI6MCwibG9ja1RpbWUiOiIyMDIxLTA4LTE1VDIwOjUyOjAwLjk0MVoiLCJ1c2VyQWNjZXNzVHlwZSI6IkFkbWluIiwiY3JlYXRlZEJ5IjoiNjBlY2Q2NjY1Nzc0OWIxZDk0MDk1YmNmIiwic2hvd0JvdExpc3QiOnRydWV9LCJpYXQiOjE2NzIwOTI3MjYsImV4cCI6MTY3MjA5ODcyNn0.hAKMKrQn_bs5Th3TtoVxBj9d_yiJSUiB2LxWAXJVIko
+
+###
+GET  https://bm-v2-api.onrender.com/api/neurons
+
+###
+DELETE  https://bm-v2-api.onrender.com/api/neurons
+
+###
+GET https://bm-v2-api.onrender.com/api/md5/get
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"afa925fba5f82e341f8d7c8e47d4d7f9",
+    "code":"POEBT",
+    "name":"PathOfExileMenu.exe"
+}
+
+###
+GET https://bm-v2-api.onrender.com/api/neurons/location/1_1_2
+
+
+##
+DELETE https://bm-v2-api.onrender.com/api/neurons/id/63ce9718f4688638ee263236
+
+
+###
+DELETE https://bm-v2-api.onrender.com/api/neurons/location/1_1_1
+
+
+###
+POST https://bm-v2-api.onrender.com/api/license/update/suspicious
+Content-Type: application/json
+
+{
+    "key" : "3LCPMTP2PJ7QEKDV1IVZQCEWWMVX54Q5",
+    "suspicious": false
+}
+
+
+###
+GET https://bm-v2-api.onrender.com/api/md5/get
+Content-Type: application/json
+
+{
+    "key":"QOJC0SMX9GRQLDGWAXGYKC2DR8M3VIFW",
+    "hd_id":"a9f369d3b50f2c5ac5c7e8c08ebc0730",
+    "code":"POEBT",
+    "name":"PathOfExileMenu.exe"
+}
+
+
+
+###
+POST https://bm-v2-api.onrender.com/api/md5/get
+Content-Type: application/json
+
+{
+    "key":"QOJC0SMX9GRQLDGWAXGYKC2DR8M3VIFW",
+    "hd_id":"a9f369d3b50f2c5ac5c7e8c08ebc0730",
+    "code":"MIRBT",
+    "name":"ADFS Client Configuration Steps_0.pdf"
+}
+
+
+
+
+
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/bot/token/get
+Content-Type: application/json
+
+{
+    "key":"ZT6LCFWVNGDZZZFMEI5EQGZ33FLGHY65","hd_id":"a9f369d3b50f2c5ac5c7e8c08ebc0730"
+}
+
+
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/file/get/encrypted
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJYWEZVRUVaQThNVjYxMUNaNTRIOE1CNk1GVzlVSzc1WiIsImhkX2lkIjoiVEVTVFkiLCJpYXQiOjE2Nzc3MTE3MjcsImV4cCI6MTY3NzcxMjYyN30.DaMEZ_9kkJsp6dfyTV-yuVM0WHT8NI2C-ccYDr3lDsk
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY",
+    "code":"POEBT",
+    "name":"discord.dll"
+}
+
+
+
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/license/days
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJYWEZVRUVaQThNVjYxMUNaNTRIOE1CNk1GVzlVSzc1WiIsImhkX2lkIjoiVEVTVFkiLCJpYXQiOjE2NzgwNDE4MTUsImV4cCI6MTY3ODA0MjcxNX0.ur8T3eZQZd3_Id9rUJz3K0d2EeShqAxplRHIpPJdpuQ
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY"
+}
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/bot/error/post
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY",
+    "error":"601"
+}
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/bot/error/post
+Content-Type: application/json
+
+{
+    "hd_id":"TESTY",
+    "error":"601"
+}
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/bot/error/post
+Content-Type: application/json
+
+{
+    "hd_id":"TESTY",
+    "error":"888"
+}
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/bot/session/start
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"TESTY"
+}
+
+###
+POST https://bm-v2-api-jwt.onrender.com/api/bot/ping
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJYWEZVRUVaQThNVjYxMUNaNTRIOE1CNk1GVzlVSzc1WiIsImhkX2lkIjoiVEVTVFkiLCJpYXQiOjE2Nzg1NjU4NDgsImV4cCI6MTY3ODU2Njc0OH0.AcKE6bR3on2UxhpAUIwsCqWszBJTcZeeFnDBxwoGpEg
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"TESTY"
+}
+
+
+
+
+
+###
+POST https://api3.bmcom.ca/api/bot/token/get
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"eee"
+}
+
+###
+POST http://localhost:8081/api/bot/token/get
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"eee"
+}
+###
+POST https://api3.bmcom.ca/api/bot/session/start
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"eee"
+}
+
+###
+POST http://localhost:8081/api/bot/session/start
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"eee"
+}
+
+###
+POST https://api3.bmcom.ca/api/bot/session/end
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJYWEZVRUVaQThNVjYxMUNaNTRIOE1CNk1GVzlVSzc1WiIsImhkX2lkIjoiZWVlIiwiaWF0IjoxNjgyNTE4MjMzLCJleHAiOjE2ODI1MTkxMzN9.OmeiztySQQUDgQaDATYw05BDtBwz3lJQYEW_y0OTNMg
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z","hd_id":"eee"
+}
+
+###
+POST http://localhost:8081/api/license/days
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxRVRNNkNKVzlRTlJKMU1GQVZLTThBWFg0NDc5RUU3UyIsImhkX2lkIjoibmV3X2lkLS0tLS0iLCJpYXQiOjE2ODMyMDQ0OTUsImV4cCI6MTY4MzIwNTM5NX0.sTvAvdkNsd-Vdq8hG0PmD9PyBCEUSmcfUB79QK3lmZA
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"new_id-----"
+}
+

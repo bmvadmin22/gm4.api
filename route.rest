@@ -1,0 +1,655 @@
+
+###
+GET http://localhost:8081/api/license/days
+Content-Type: application/json
+
+{
+    "key":"7E4NA3581M2OFL0RSUJ9P759PY1PCVRZ",
+    "hd_id":"6050ce66f98c522ad8d10ffe"
+}
+
+
+### Create Log
+POST http://localhost:8081/api/log
+Content-Type: application/json
+
+    {
+        "email":"vavan.v@gmail.com",
+        "action": "login",
+        "message": "OK"
+    }
+
+
+###
+GET http://localhost:8081/
+
+
+###
+GET http://localhost:8081/api/bots
+
+
+###
+GET http://localhost:8081/api/bots
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImlhdCI6MTYyNjU1MTcyNywiZXhwIjoxNjI2NTU1MzI3fQ.vGaD84s3v3YHB1wVSFvNIk2IRFgrd60gVcfXuly0Xmg
+
+
+###
+GET http://localhost:8081/api/files
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImVtYWlsIjoidmF2YW4udkBnbWFpbC5jb20iLCJpYXQiOjE2Mjc2NDQ4NjIsImV4cCI6MTYyNzY0ODQ2Mn0.miAF56ZIc37W1GcN_Q5zg3A__FxVCzd-dnk5Ujd3vhQ
+
+
+###
+POST http://localhost:8081/api/user/nickname
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImVtYWlsIjoidmF2YW4udkBnbWFpbC5jb20iLCJpYXQiOjE2Mjc2NDQ4NjIsImV4cCI6MTYyNzY0ODQ2Mn0.miAF56ZIc37W1GcN_Q5zg3A__FxVCzd-dnk5Ujd3vhQ
+Content-Type: application/json
+
+    {
+        "nickname": "Admin"
+    }
+
+
+###
+GET http://localhost:8081/api/files
+
+
+###
+GET http://localhost:8081/api/users
+
+
+
+  auth: {
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImlzQWN0aXZlIjp0cnVlLCJlbWFpbCI6ImJtX3YyX2FkbWluQHByb3Rvbm1haWwuY29tIiwibmlja25hbWUiOiJBZG1pbiBHb29kIE9uZSEiLCJwYXNzd29yZCI6IiQyYiQxMCRUUGN4NW0yZGNBLmFFVEZ6VW51US5lYk9TaTVjQlZEdHA5Mm1TdjZtbDZVQmFCNTlHNkRMQyIsImRldGFpbHMiOiJBZG1pbiB3aG8gaXMgd2F0Y2hpbmcgeW91LCBtb3JvbnMgLi4uIDopIiwiX192IjowLCJjb25maXJtYXRpb25Db2RlIjoiJDJiJDA1JDRDNE1XWDFHQXMzZUZiNzVTYkF3amU2eU80SVNSNUp6UFAvOGRYVlVHY3M3Wm80SEZxSm5xIiwiY29uZmlybWF0aW9uQ29kZUV4cGlyZURhdGUiOiIyMDIyLTExLTE5VDE3OjUzOjExLjY5MVoiLCJudW1iZXJPZkZhaWxlZExvZ2lucyI6MCwibG9ja1RpbWUiOiIyMDIxLTA4LTE1VDIwOjUyOjAwLjk0MVoiLCJ1c2VyQWNjZXNzVHlwZSI6IkFkbWluIiwiY3JlYXRlZEJ5IjoiNjBlY2Q2NjY1Nzc0OWIxZDk0MDk1YmNmIiwic2hvd0JvdExpc3QiOnRydWV9LCJpYXQiOjE2NzIwOTI3MjYsImV4cCI6MTY3MjA5ODcyNn0.hAKMKrQn_bs5Th3TtoVxBj9d_yiJSUiB2LxWAXJVIko',
+    refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImlzQWN0aXZlIjp0cnVlLCJlbWFpbCI6ImJtX3YyX2FkbWluQHByb3Rvbm1haWwuY29tIiwibmlja25hbWUiOiJBZG1pbiBHb29kIE9uZSEiLCJwYXNzd29yZCI6IiQyYiQxMCRUUGN4NW0yZGNBLmFFVEZ6VW51US5lYk9TaTVjQlZEdHA5Mm1TdjZtbDZVQmFCNTlHNkRMQyIsImRldGFpbHMiOiJBZG1pbiB3aG8gaXMgd2F0Y2hpbmcgeW91LCBtb3JvbnMgLi4uIDopIiwiX192IjowLCJjb25maXJtYXRpb25Db2RlIjoiJDJiJDA1JDRDNE1XWDFHQXMzZUZiNzVTYkF3amU2eU80SVNSNUp6UFAvOGRYVlVHY3M3Wm80SEZxSm5xIiwiY29uZmlybWF0aW9uQ29kZUV4cGlyZURhdGUiOiIyMDIyLTExLTE5VDE3OjUzOjExLjY5MVoiLCJudW1iZXJPZkZhaWxlZExvZ2lucyI6MCwibG9ja1RpbWUiOiIyMDIxLTA4LTE1VDIwOjUyOjAwLjk0MVoiLCJ1c2VyQWNjZXNzVHlwZSI6IkFkbWluIiwiY3JlYXRlZEJ5IjoiNjBlY2Q2NjY1Nzc0OWIxZDk0MDk1YmNmIiwic2hvd0JvdExpc3QiOnRydWV9LCJpYXQiOjE2NzIwOTI3MjZ9.vf2zhHZb9Ih-JQMjeWKVh2VWW0ITGdrTzKMnq8yy2Bc',
+    expiredAt: '2022-12-26T23:52:06.381Z'
+  },
+### GOOD ONE
+POST http://localhost:8081/api/user/password
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImVtYWlsIjoidmF2YW4udkBnbWFpbC5jb20iLCJpYXQiOjE2MjgxMDI5NDIsImV4cCI6MTYyODEwNjU0Mn0.5LJhZLW3IL9kd9VDLaDEVhd1_elTPyVaYsMcRHAurNw
+Content-Type: application/json
+
+    {
+        "email": "vavan.v@gmail.com",
+        "iHaveCode": false,
+        "confirmationCode": "",
+        "password": "",
+        "confirmationPassword": ""
+    }
+
+
+
+
+
+### BAD ONE
+POST http://localhost:8081/api/auth
+Authorization: Basic Ym1hbmFnZXJ2MkBnbWFpbC5jb206dnZ2dg==
+
+
+###
+POST  http://localhost:8081/api/auth
+
+
+### GOOD ONE
+POST http://localhost:8081/api/user/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlzQWN0aXZlIjp0cnVlLCJfaWQiOiI2MGVjZDY2NjU3NzQ5YjFkOTQwOTViY2YiLCJlbWFpbCI6InZhdmFuLnZAZ21haWwuY29tIiwibmlja25hbWUiOiJBZG1pbiBHb29kIE9uZSIsInBhc3N3b3JkIjoiJDJiJDEwJEltbHlWWHBodmJhRVRLWktFYWh0YS5pbkNCQTIxOWN5UEpYNVlBVC5wUVdlWUdPV1RHWE51IiwiZGV0YWlscyI6IkFkbWluIHdobyBpcyB3YXRjaGluZyB5b3UsIG1vcm9ucyAuLi4iLCJfX3YiOjAsImNvbmZpcm1hdGlvbkNvZGUiOiIkMmIkMDUkengvZEd3TENsU0tDRXp5YzFaeS4xT3Q1QXlVNXlzODZxUzB2V2laYUlUOFowMlFyLzBXaS4iLCJjb25maXJtYXRpb25Db2RlRXhwaXJlRGF0ZSI6IjIwMjEtMDktMjJUMTg6NTQ6NDYuMzgzWiIsIm51bWJlck9mRmFpbGVkTG9naW5zIjowLCJsb2NrVGltZSI6IjIwMjEtMDgtMTVUMjA6NTI6MDAuOTQxWiIsInVzZXJBY2Nlc3NUeXBlIjoiQWRtaW4iLCJjcmVhdGVkQnkiOiI2MGVjZDY2NjU3NzQ5YjFkOTQwOTViY2YifSwiaWF0IjoxNjMyMzM5MTU4LCJleHAiOjE2MzIzNDI3NTh9.1qoHnx45CdkF0gMGuVUyC9TPKolgM3VZ4_ZvkZ75FvU
+
+
+###
+GET http://localhost:8081/api/user/email/vavan.v@gmail.com
+
+
+###
+GET http://localhost:8081/api/user/email/someemail@gmail.com
+
+
+###
+POST http://localhost:8081/api/user/create
+Content-Type: application/json
+
+    {
+        "email": "vavan.v@gmail.com",
+        "nickname": "vavan.v Admin",
+        "password" : "vvvv",
+        "isAdmin": true,
+        "isActive": true,
+        "details" : "Admin dont delete"
+    }
+
+
+###
+POST http://localhost:8081/api/user/create
+Content-Type: application/json
+
+    {
+        "email": "maasheenu@gmail.com",
+        "nickname": "maasheenu Admin",
+        "password" : "Aa253278",
+        "isAdmin": true,
+        "isActive": true,
+        "details" : "Admin! don't delete"
+    }
+
+
+###  Check nickname uniqueness
+POST http://localhost:8081/api/user/create
+Content-Type: application/json
+
+    {
+        "email": "new@gmail.com",
+        "nickname": "maasheenu Admin",
+        "password" : "pwd",
+        "isAdmin": true,
+        "isActive": true,
+        "details" : "Admin! don't delete"
+    }
+
+
+###
+PUT http://localhost:8081/api/user
+Content-Type: application/json
+
+    {
+        "email": "vavan.v@gmail.com",
+        "password" : "vvvv",
+        "isAdmin": true,
+        "isActive": true,
+        "details" : "Admin dont delete"
+    }
+
+
+###
+PUT http://localhost:8081/api/bot
+Content-Type: application/json
+
+    {
+        "email": "1user@mail202.com",
+        "location" : "192.168.1.2 Location 02",
+        "error":"Error: 404",
+        "status":false,
+        "requestedStatus": true
+    }
+
+
+###
+GET http://localhost:8081/api/bot/id/60552c12cdeb53001561cab4
+
+
+###
+GET http://localhost:8081/api/bot/email/vladimir@mail.com
+
+
+###
+GET http://localhost:8081/api/bot/requestedStatus/vladimir@mail.com
+
+
+###
+POST http://localhost:8081/api/bot/requestedStatus/vladimir@mail.com
+Content-Type: application/json
+
+{
+    "requestedStatus":false
+}
+
+
+###
+GET http://localhost:8081/api/bot/email/vladimir@mail2.com
+
+
+###
+DELETE http://localhost:8081/api/bot/id/60552bc7cdeb53001561cab3
+
+
+###
+DELETE http://localhost:8081/api/bot/email/v01@mail.com
+
+
+###
+GET http://localhost:8081/api/file/61588602e09a640016ed6ff6
+// Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImVtYWlsIjoidmF2YW4udkBnbWFpbC5jb20iLCJpYXQiOjE2MzEwNDI4NzksImV4cCI6MTYzMTA0NjQ3OX0.OWWhZFHK447jlb3C-08NniQV2ydimhrolIgB-MD_Gis
+
+
+###
+GET http://localhost:8081/api/md5/612ec9b2ee8b2d0016b7c4b7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImVtYWlsIjoidmF2YW4udkBnbWFpbC5jb20iLCJpYXQiOjE2MzEwNDI4NzksImV4cCI6MTYzMTA0NjQ3OX0.OWWhZFHK447jlb3C-08NniQV2ydimhrolIgB-MD_Gis
+
+'37fb102be86143d7ebe567afc0a58fe7'
+
+
+###
+GET http://localhost:8081/api/md5/6175e3493e1ac573bdffc29b
+
+
+###
+DELETE http://localhost:8081/api/delete/express-handbook.pdf
+
+
+###
+GET http://localhost:8081/api/file/get
+Content-Type: application/json
+
+{
+    "key": "40LAW31IBEHZ3KVYLP5ZTCF5QZCJ5672",
+    "hd_id":"61e6d4064a92c8c54e35df70",
+    "code":"NWRLD",
+    "name":"launcher.exe"
+}
+
+
+###
+GET  http://localhost:8081/api/file/get
+Content-Type: application/json
+
+{
+        "key":"MDNPJJWGM9F5OLM5N66XFKSIBVZKOQO9",
+    "hd_id":"a6186c9e7e305febaeb5262e987a86fa",
+    "code":"ALBION",
+    "name":"kinfinityhook.sys"
+}
+
+
+###
+GET  http://localhost:8081/api/license/days
+Content-Type: application/json
+
+{
+    "key":"XJWOQZAGCFM3DXWBACM6Z59AFSNTE25B++",
+    "hd_id":"778a0d211c2ce89037942abdf5911476"
+}
+
+###
+GET  http://localhost:8081/api/license/days
+Content-Type: application/json
+
+{
+    "key":"XJWOQZAGCFM3DXWBACM6Z59AFSNTE25B",
+    "hd_id":"778a0d211c2ce89037942abdf5911476++"
+}
+
+###
+GET  http://localhost:8081/api/license/days
+Content-Type: application/json
+
+{
+    "key":"KYDCLJ9HL16F6NDXS3M0TVMN2GHT9ZA8",
+    "hd_id":"test"
+}
+
+
+###
+GET http:/localhost:8081/api/license/days
+Content-Type: application/json
+
+{
+    "key":"MDNPJJWGM9F5OLM5N66XFKSIBVZKOQO9",
+    "hd_id":"a6186c9e7e305febaeb5262e987a86fa"
+}
+
+
+###
+POST http://localhost:8081/api/license/days_post
+Content-Type: application/json
+
+{
+    "key":"MDNPJJWGM9F5OLM5N66XFKSIBVZKOQO9",
+    "hd_id":"a6186c9e7e305febaeb5262e987a86fa"
+}
+
+###
+GET http://localhost:8081/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImlzQWN0aXZlIjp0cnVlLCJlbWFpbCI6ImJtX3YyX2FkbWluQHByb3Rvbm1haWwuY29tIiwibmlja25hbWUiOiJBZG1pbiBHb29kIE9uZSEiLCJwYXNzd29yZCI6IiQyYiQxMCRUUGN4NW0yZGNBLmFFVEZ6VW51US5lYk9TaTVjQlZEdHA5Mm1TdjZtbDZVQmFCNTlHNkRMQyIsImRldGFpbHMiOiJBZG1pbiB3aG8gaXMgd2F0Y2hpbmcgeW91LCBtb3JvbnMgLi4uIDopIiwiX192IjowLCJjb25maXJtYXRpb25Db2RlIjoiJDJiJDA1JDRDNE1XWDFHQXMzZUZiNzVTYkF3amU2eU80SVNSNUp6UFAvOGRYVlVHY3M3Wm80SEZxSm5xIiwiY29uZmlybWF0aW9uQ29kZUV4cGlyZURhdGUiOiIyMDIyLTExLTE5VDE3OjUzOjExLjY5MVoiLCJudW1iZXJPZkZhaWxlZExvZ2lucyI6MCwibG9ja1RpbWUiOiIyMDIxLTA4LTE1VDIwOjUyOjAwLjk0MVoiLCJ1c2VyQWNjZXNzVHlwZSI6IkFkbWluIiwiY3JlYXRlZEJ5IjoiNjBlY2Q2NjY1Nzc0OWIxZDk0MDk1YmNmIiwic2hvd0JvdExpc3QiOnRydWV9LCJpYXQiOjE2NzIwOTI3MjYsImV4cCI6MTY3MjA5ODcyNn0.hAKMKrQn_bs5Th3TtoVxBj9d_yiJSUiB2LxWAXJVIko
+
+###
+GET  http://localhost:8081/api/neurons
+
+
+###
+POST  http://localhost:8081/api/neuron/update
+Content-Type: application/json
+
+{
+    "location":"location2",
+    "horizontal":false,
+    "w": 333,
+    "h": 4,
+    "objectName": "object name 33",
+    "startPosition": {
+        "x": 2.22,
+        "y": 4.44,
+        "z": 5.55
+    },
+    "objectPosition": {
+        "x": 0.66,
+        "y": 77.7777,
+        "z": 0.0888
+    }
+}
+
+###
+DELETE  http://localhost:8081/api/neurons
+
+###
+GET http://localhost:8081/api/md5/get
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"afa925fba5f82e341f8d7c8e47d4d7f9",
+    "code":"POEBT",
+    "name":"PathOfExileMenu.exe"
+}
+
+###
+GET http://localhost:8081/api/neurons/location/1_1_town
+
+###
+DELETE http://localhost:8081/api/neurons/id/63ce9718f4688638ee263236
+
+
+###
+DELETE http://localhost:8081/api/neurons/location/1_1_1
+
+
+###
+POST http://localhost:8081/api/license/update/suspicious
+Content-Type: application/json
+
+{
+    "key" : "3LCPMTP2PJ7QEKDV1IVZQCEWWMVX54Q5",
+    "suspicious": false
+}
+
+###
+GET http://localhost:8081/api/bot/group/by/key
+
+
+###
+GET http://localhost:8081/api/md5/get
+Content-Type: application/json
+
+{
+    "key":"QOJC0SMX9GRQLDGWAXGYKC2DR8M3VIFW",
+    "hd_id":"a9f369d3b50f2c5ac5c7e8c08ebc0730",
+    "code":"POEBT",
+    "name":"PathOfExileMenu.exe"
+}
+
+
+
+
+
+###
+POST http://localhost:8081/api/md5/get
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY",
+    "code":"POEBT",
+    "name":"discordTest.dll"
+}
+
+###
+POST http://localhost:8081/api/bot/token/get
+Content-Type: application/json
+
+{
+"key":"O6EWY5MNZQ2YK8Z48TCGYPBS0CJLRIX2","hd_id":"asdasdasdasd"
+}
+
+
+
+###
+POST http://localhost:8081/api/file/get/encrypted
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJYWEZVRUVaQThNVjYxMUNaNTRIOE1CNk1GVzlVSzc1WiIsImhkX2lkIjoiVEVTVFkiLCJpYXQiOjE2NzgxNTE1MDMsImV4cCI6MTY3ODE1MjQwM30.c_l23eWUwWxsagHgb5lmTHwVAtRpjKaqUT4nN8T417g
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY",
+    "code":"POEBT",
+    "name":"discordTS.dll"
+}
+
+# ###
+# POST http://localhost:8081/api/license/get/errors
+# Content-Type: application/json
+
+# {
+#     "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+#     "hd_id":"TESTY"
+# }
+
+###
+POST http://localhost:8081/api/bot/error/post
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY",
+    "error":"601"
+}
+
+
+###
+# POST http://localhost:8081/api/bot/error/post
+# Content-Type: application/json
+
+# {
+#     "hd_id":"TESTY",
+#     "error":"606"
+# }
+
+###
+POST http://localhost:8081/api/bot/token/get
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY"
+}
+
+
+###
+POST http://localhost:8081/api/bot/session/start
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY"
+}
+
+###
+POST http://localhost:8081/api/bot/token/get
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY"
+}
+
+
+###
+POST http://localhost:8081/api/file/get/encrypted
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJYWEZVRUVaQThNVjYxMUNaNTRIOE1CNk1GVzlVSzc1WiIsImhkX2lkIjoiVEVTVFkiLCJpYXQiOjE2Nzg2ODAzMjIsImV4cCI6MTY3ODY4MTIyMn0.bBf-bIIzBZK_Kr5sXqjwzUofeX2djBwsDOfPUoWdm-o
+Content-Type: application/json
+
+{
+    "key":"XXFUEEZA8MV611CZ54H8MB6MFW9UK75Z",
+    "hd_id":"TESTY",
+    "code":"POEBT",
+    "name":"30-days-of-react-ebook-fullstackio.pdf"
+}
+
+###
+POST http://localhost:8081/api/bot/session/start
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxRVRNNkNKVzlRTlJKMU1GQVZLTThBWFg0NDc5RUU3UyIsImhkX2lkIjoiZmZmZiIsImlhdCI6MTY4Mjk1NzIyOSwiZXhwIjoxNjgyOTU4MTI5fQ.SADQJGAVRzv4EmXlTFmIhaazfp9jYVgDJjhUyJO1Wu8
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"ffff"
+}
+
+###
+POST http://localhost:8081/api/bot/session/end
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxRVRNNkNKVzlRTlJKMU1GQVZLTThBWFg0NDc5RUU3UyIsImhkX2lkIjoiZmZmZiIsImlhdCI6MTY4Mjk1NjcxMSwiZXhwIjoxNjgyOTU3NjExfQ.yfyqtr8kt0YcvrozURGNhVW5pqF1WfHvLqVkqDFaRP4
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"ffff"
+}
+
+###
+POST http://localhost:8081/api/bot/ping
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxRVRNNkNKVzlRTlJKMU1GQVZLTThBWFg0NDc5RUU3UyIsImhkX2lkIjoiZmZmZiIsImlhdCI6MTY4Mjk1NTUzNiwiZXhwIjoxNjgyOTU2NDM2fQ.ZARrxpEcYXr1VZVexWNrjBFI9y33YBg7WD1lD0aPNZc
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S","hd_id":"ffff"
+}
+
+
+
+
+
+###
+POST http://localhost:8081/api/bot/token/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxRVRNNkNKVzlRTlJKMU1GQVZLTThBWFg0NDc5RUU3UyIsImhkX2lkIjoiZmZmZiIsImlhdCI6MTY4Mjk1NjY2MSwiZXhwIjoxNjgyOTU3NTYxfQ.3A9Nuz0Bwz-RHbktVb2zNeQtrwNbCZGqr9TRpm-ghZ8
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"ffff"
+}
+
+
+###
+POST http://localhost:8081/api/md5/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxRVRNNkNKVzlRTlJKMU1GQVZLTThBWFg0NDc5RUU3UyIsImhkX2lkIjoiMTExMTExIiwiaWF0IjoxNjgwNzA5NzYzLCJleHAiOjE2ODA3MTA2NjN9.bDucgT56gY-FgkBgQ7S8zmSQi2Kn3sIl1RJjQvl8v5U
+Content-Type: application/json
+
+{
+    "key":"1ETM6CJW9QNRJ1MFAVKM8AXX4479EE7S",
+    "hd_id":"111111",
+    "code":"POEBT",
+    "name":"discordNEW.dll"
+}
+
+###
+GET http://localhost:8081/
+
+###
+POST http://localhost:8081/api/auth
+Authorization: Basic Ym1fdjJfYWRtaW5AcHJvdG9ubWFpbC5jb206MTlWbGFkaW1pUjYyIUA=
+
+###
+POST http://localhost:8081/api/license/reset/hd_ids
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwZWNkNjY2NTc3NDliMWQ5NDA5NWJjZiIsImlzQWN0aXZlIjp0cnVlLCJlbWFpbCI6ImJtX3YyX2FkbWluQHByb3Rvbm1haWwuY29tIiwibmlja25hbWUiOiJBZG1pbiBHb29kIE9uZSEiLCJwYXNzd29yZCI6IiQyYiQxMCREMk5yTERnV2xQQU5tcFdYd01Gbm91akxBM0RJc0wzczhmRWZnVHc4QkI0enZIbld2RGRUYSIsImRldGFpbHMiOiJBZG1pbiB3aG8gaXMgd2F0Y2hpbmcgeW91LCBtb3JvbnMgLi4uIDopIiwiX192IjowLCJjb25maXJtYXRpb25Db2RlIjoiJDJiJDA1JGZLNjdGaTU4WFRWZEpGNDdDMlNHYU8vNzNtOTloRmtLbUtnQWZFVFIxelBmdjV3a1E5bVptIiwiY29uZmlybWF0aW9uQ29kZUV4cGlyZURhdGUiOiIyMDIzLTA1LTAyVDIwOjQ0OjM5LjgyNloiLCJudW1iZXJPZkZhaWxlZExvZ2lucyI6MCwibG9ja1RpbWUiOiIyMDIxLTA4LTE1VDIwOjUyOjAwLjk0MVoiLCJ1c2VyQWNjZXNzVHlwZSI6IkFkbWluIiwiY3JlYXRlZEJ5IjoiNjBlY2Q2NjY1Nzc0OWIxZDk0MDk1YmNmIiwic2hvd0JvdExpc3QiOnRydWV9LCJpYXQiOjE2ODMxNDMwOTgsImV4cCI6MTY4MzE0OTA5OH0.ETc2ib8XB3nZZDBG2E95btmxyOcdNn4GYY4ckZU6yRU
+Content-Type: application/json
+
+{
+    "user_id":"60ecd66657749b1d94095bcf",
+    "game_id":"6231af5ec3ac27208e07862d"
+}
+
+
+
+
+
+###
+POST http://localhost:8081/api/license/days
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyM0haNUMzUlo4VkZaNEdRWkJEOFlFQ08yRVBMOEtEUiIsImhkX2lkIjoic3Nzc3NzcyIsImlhdCI6MTY4NDE1OTQ5MSwiZXhwIjoxNjg1MDU5NDkxfQ.KANoy-vTQf_MrYOzOpCMMzFwJFrGuUMUtJxdJPYQq6U
+Content-Type: application/json
+
+{
+    "key":"23HZ5C3RZ8VFZ4GQZBD8YECO2EPL8KDR",
+    "hd_id":"sssssssaADASDASDASDASDAS"
+}
+
+
+###
+POST http://localhost:8081/api/v2/md5/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyM0haNUMzUlo4VkZaNEdRWkJEOFlFQ08yRVBMOEtEUiIsImhkX2lkIjoic3Nzc3Nzc2FBREFTREFTREFTREFTREFTIiwiaWF0IjoxNjg0Nzc3NzE5LCJleHAiOjE2ODU2Nzc3MTl9.hsrG87KKpXu5YiHOnhH3yPz_mHxkjFnprwTwaXUQ3PA
+Content-Type: application/json
+
+{
+    "key":"23HZ5C3RZ8VFZ4GQZBD8YECO2EPL8KDR",
+    "hd_id":"sssssssaADASDASDASDASDAS",
+    "code":"POEBT",
+    "name":"a.exe"
+}
+
+###
+POST http://localhost:8081/api/v2/file/get/encrypted
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyM0haNUMzUlo4VkZaNEdRWkJEOFlFQ08yRVBMOEtEUiIsImhkX2lkIjoic3Nzc3Nzc2FBREFTREFTREFTREFTREFTIiwiaWF0IjoxNjg0Nzc3NzM2LCJleHAiOjE2ODU2Nzc3MzZ9.GPzzP28pBE_LpUeGw9iCoa6DCX4HeaNdpD_9RT9uMGY
+Content-Type: application/json
+
+{
+    "key":"23HZ5C3RZ8VFZ4GQZBD8YECO2EPL8KDR",
+    "hd_id":"sssssssaADASDASDASDASDAS",
+    "code":"POEBT",
+    "name":"a.exe"
+}
+
+
+###
+POST http://localhost:8081/api/bot/token/get
+Content-Type: application/json
+
+{
+    "key":"8R98ZFOKZJ63ZMRE1IWOF2GJWETTITQX",
+    "hd_id":"xxx"
+}
+
+###
+POST http://localhost:8081/api/bot/session/start
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJPNkVXWTVNTlpRMllLOFo0OFRDR1lQQlMwQ0pMUklYMiIsImhkX2lkIjoiMSIsImlhdCI6MTY4NTEwNTU4NywiZXhwIjoxNjg2MDA1NTg3fQ.1vXiPbaDRHQP7MCKE5ZyMIUI55sv3RpEG-iZpD1zRNM
+Content-Type: application/json
+
+{
+    "key":"8R98ZFOKZJ63ZMRE1IWOF2GJWETTITQX",
+    "hd_id":"xxx"
+}
+
+###
+POST http://localhost:8081/api/statistics/id/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJPNkVXWTVNTlpRMllLOFo0OFRDR1lQQlMwQ0pMUklYMiIsImhkX2lkIjoiMSIsImlhdCI6MTY4NTEwNTYyNSwiZXhwIjoxNjg2MDA1NjI1fQ.bmzTDt19nTALG88w6CIBoAonaf_z8p1aRQyaDVLehF0
+Content-Type: application/json
+
+{
+    "key":"8R98ZFOKZJ63ZMRE1IWOF2GJWETTITQX",
+    "hd_id":"xxx"
+}
+
+###
+POST http://localhost:8081/api/statistics/set
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyM0haNUMzUlo4VkZaNEdRWkJEOFlFQ08yRVBMOEtEUiIsImhkX2lkIjoic3Nzc3Nzc2FBREFTREFTREFTREFTREFTIiwiaWF0IjoxNjg0ODYyMTEwLCJleHAiOjE2ODU3NjIxMTB9.FPcuWcu6snpw7g1R8yjrB2Rn65Uamm5iOGObni2sIYQ
+Content-Type: application/json
+
+{
+    "key":"8R98ZFOKZJ63ZMRE1IWOF2GJWETTITQX",
+    "hd_id":"xxx",
+    "id":"40cc5465-e692-4847-98f8-0bff15459dc6",
+    "statistics":"{\"info\":{\"chaosPerHour\":160750.75,\"deathCount\":12,\"lastProfit\":0.0,\"lastTimeValue\":0,\"timeValue\":3149751},\"locations\":[{\"allCount\":0,\"avgTime\":0.0,\"items\":[{\"count\":1,\"first\":0,\"name\":\"Armoursmith's Delirium Orb\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Awakened Sextant\",\"second\":0,\"third\":false},{\"count\":10,\"first\":0,\"name\":\"Stacked Deck\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Annulment Shard\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Orb of Unmaking\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Blessed Orb\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Glassblower's Bauble\",\"second\":0,\"third\":false}],\"name\":\"Coral Hideout\"},{\"allCount\":69,\"avgTime\":4.119999885559082,\"items\":[{\"count\":1,\"first\":0,\"name\":\"Mirror of Kalandra\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Apothecary\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Voidborn Reliquary Key\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Seven Years Bad Luck\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Divine Orb\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Screaming Invitation\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Sacred Orb\",\"second\":0,\"third\":false},{\"count\":21,\"first\":0,\"name\":\"Fracturing Shard\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Winged Divination Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Maven's Invitation: The Twisted\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Winged Abyss Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Darker Half\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Dragon's Heart\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Eldritch Orb of Annulment\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Ventor's Gamble\",\"second\":99,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Diviner's Delirium Orb\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Exalted Orb\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Timeless Maraketh Emblem\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Tainted Mythic Orb\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Gilded Divination Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Mortal Ignorance\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Timeless Templar Emblem\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Eldritch Exalted Orb\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Perfect Fossil\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Fine Delirium Orb\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Veiled Chaos Orb\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Ancient Orb\",\"second\":0,\"third\":false},{\"count\":57,\"first\":0,\"name\":\"Ornate Incubator\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Witchbane\",\"second\":99,\"third\":false},{\"count\":46,\"first\":0,\"name\":\"Diviner's Incubator\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Foreboding Delirium Orb\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Blighted Delirium Orb\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Amorphous Delirium Orb\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Jeweller's Delirium Orb\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Burial Medallion\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Exotic Coinage\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Gilded Ambush Scarab\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Polished Legion Scarab\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Imperial Delirium Orb\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Armoursmith's Delirium Orb\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Prejudice\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Timeless Delirium Orb\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Blacksmith's Delirium Orb\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Jeweller's Boon\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Polished Divination Scarab\",\"second\":0,\"third\":false},{\"count\":70,\"first\":0,\"name\":\"Awakened Sextant\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Bestiary Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Harbinger Scarab\",\"second\":0,\"third\":false},{\"count\":20,\"first\":0,\"name\":\"Orb of Annulment\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Gilded Legion Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Expedition Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Blight Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Cartography Scarab\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Gilded Metamorph Scarab\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Shard of Fate\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Cacophony\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"The Heroic Shot\",\"second\":0,\"third\":false},{\"count\":13,\"first\":0,\"name\":\"The Lord of Celebration\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Gilded Breach Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Bones\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Drunken Aristocrat\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"The Rite of Elements\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Fool\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"The Rabid Rhoa\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Easy Stroll\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Gift of the Gemling Queen\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Sambodhi's Vow\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Gentleman\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Vinia's Token\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Fox\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Fox in the Brambles\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Thirst for Knowledge\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Cartographer\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"The Tinkerer's Table\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Endurance\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Azure Rage\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Lost Worlds\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Traitor\",\"second\":0,\"third\":false},{\"count\":14,\"first\":0,\"name\":\"The Inventor\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Gemcutter\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Mortal Rage\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Wolf's Legacy\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Coveted Possession\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Arrogance of the Vaal\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Lysah's Respite\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Offspring\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Demigod's Wager\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Pact\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Fathomless Depths\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Left to Fate\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Golden Era\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Checkmate\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Parasitic Passengers\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Heterochromia\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Mad King\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Gladiator\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Master\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Admirer\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Surveyor\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Shepherd's Sandals\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Dark Mage\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Spoiled Prince\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Sambodhi's Wisdom\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Wind\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Incantation\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"A Mother's Parting Gift\",\"second\":0,\"third\":false},{\"count\":26,\"first\":0,\"name\":\"The Skeleton\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Stormcaller\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Risk\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Gilded Abyss Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Torment Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gilded Sulphite Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Twilight Moon\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Gilded Shaper Scarab\",\"second\":0,\"third\":false},{\"count\":22,\"first\":0,\"name\":\"Kalguuran Incubator\",\"second\":0,\"third\":false},{\"count\":20,\"first\":0,\"name\":\"Grand Eldritch Ichor\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Gilded Elder Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Atziri's Arsenal\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Landing\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Cataclysm\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Blind Venture\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"The Wilted Rose\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Witch\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Tireless Extractor\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"The Lion\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Mountain\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Battle Born\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Emperor of Purity\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Transformation\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Polished Ambush Scarab\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"The Body\",\"second\":0,\"third\":false},{\"count\":14,\"first\":0,\"name\":\"Timeless Vaal Emblem\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Fertile Catalyst\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Man With Bear\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Dapper Prodigy\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Hope\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Polished Bestiary Scarab\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"The Hoarder\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Watcher\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Scholar of the Seas\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"The Void\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Harvester\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Journalist\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"The Valkyrie\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Opulent\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Wolf\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Tower\",\"second\":0,\"third\":false},{\"count\":19,\"first\":0,\"name\":\"Foreboding Incubator\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Rats\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Arena Champion\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Summoner\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Porcupine\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Hubris\",\"second\":0,\"third\":false},{\"count\":24,\"first\":0,\"name\":\"Volatile Power\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Mitts\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Aesthete\",\"second\":0,\"third\":false},{\"count\":17,\"first\":0,\"name\":\"Three Voices\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Dialla's Subjugation\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Blazing Fire\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Mortal Hope\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Alone in the Darkness\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Standoff\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"A Dab of Ink\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Corroded Fossil\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Scarred Meadow\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"The Hermit\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Dying Anguish\",\"second\":0,\"third\":false},{\"count\":16,\"first\":0,\"name\":\"The King's Blade\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Fundamental Fossil\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Destined to Crumble\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Saint's Treasure\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Serrated Fossil\",\"second\":0,\"third\":false},{\"count\":30,\"first\":0,\"name\":\"The Doppelganger\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"The Metalsmith's Gift\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Bound Fossil\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Hunter's Resolve\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"The Realm\",\"second\":0,\"third\":false},{\"count\":318,\"first\":0,\"name\":\"Stacked Deck\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"The Cache\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Rusted Legion Scarab\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Polished Harbinger Scarab\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Rusted Divination Scarab\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Boon of Justice\",\"second\":0,\"third\":false},{\"count\":21,\"first\":0,\"name\":\"Timeless Eternal Emblem\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Calling\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Polished Reliquary Scarab\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Timeless Karui Emblem\",\"second\":0,\"third\":false},{\"count\":14,\"first\":0,\"name\":\"Glimmer of Hope\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Assassin's Favour\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"The Trial\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Jack in the Box\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Humility\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Time-Lost Relic\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Vanity\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Maddening Incubator\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Polished Cartography Scarab\",\"second\":0,\"third\":false},{\"count\":13,\"first\":0,\"name\":\"Polished Expedition Scarab\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Polished Abyss Scarab\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Polished Metamorph Scarab\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Polished Breach Scarab\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Polished Blight Scarab\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Polished Sulphite Scarab\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Polished Elder Scarab\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Rusted Ambush Scarab\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Rusted Bestiary Scarab\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Polished Shaper Scarab\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Polished Torment Scarab\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Lantador's Lost Love\",\"second\":0,\"third\":false},{\"count\":565,\"first\":0,\"name\":\"Annulment Shard\",\"second\":0,\"third\":false},{\"count\":58,\"first\":0,\"name\":\"Exalted Shard\",\"second\":0,\"third\":false},{\"count\":300,\"first\":0,\"name\":\"Chaos Orb\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Wailing Essence of Anguish\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Wailing Essence of Woe\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Wailing Essence of Sorrow\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"Screaming Essence of Envy\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Wailing Essence of Rage\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Wailing Essence of Hatred\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"The Chains that Bind\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Wailing Essence of Contempt\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Wailing Essence of Loathing\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Wailing Essence of Torment\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Wailing Essence of Anger\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Wailing Essence of Greed\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"The Flora's Gift\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Remnant of Corruption\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Wailing Essence of Zeal\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Wailing Essence of Wrath\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Aetheric Fossil\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"The Scholar\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Wailing Essence of Doubt\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Wailing Essence of Suffering\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Wailing Essence of Fear\",\"second\":0,\"third\":false},{\"count\":29,\"first\":0,\"name\":\"Greater Eldritch Ichor\",\"second\":0,\"third\":false},{\"count\":29,\"first\":0,\"name\":\"Rusted Harbinger Scarab\",\"second\":0,\"third\":false},{\"count\":280,\"first\":0,\"name\":\"Orb of Scouring\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Splinter of Chayula\",\"second\":0,\"third\":false},{\"count\":10,\"first\":0,\"name\":\"Screaming Essence of Doubt\",\"second\":0,\"third\":false},{\"count\":62,\"first\":0,\"name\":\"Orb of Unmaking\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Dense Fossil\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Splinter of Uul-Netol\",\"second\":0,\"third\":false},{\"count\":16,\"first\":0,\"name\":\"Rusted Cartography Scarab\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Rusted Elder Scarab\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"Screaming Essence of Loathing\",\"second\":0,\"third\":false},{\"count\":18,\"first\":0,\"name\":\"Rusted Sulphite Scarab\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Jagged Fossil\",\"second\":0,\"third\":false},{\"count\":13,\"first\":0,\"name\":\"Rusted Torment Scarab\",\"second\":0,\"third\":false},{\"count\":22,\"first\":0,\"name\":\"Rusted Expedition Scarab\",\"second\":0,\"third\":false},{\"count\":21,\"first\":0,\"name\":\"Rusted Breach Scarab\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Screaming Essence of Greed\",\"second\":0,\"third\":false},{\"count\":10,\"first\":0,\"name\":\"Screaming Essence of Contempt\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Tainted Armourer's Scrap\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Rusted Reliquary Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Lucent Fossil\",\"second\":0,\"third\":false},{\"count\":20,\"first\":0,\"name\":\"Rusted Blight Scarab\",\"second\":0,\"third\":false},{\"count\":16,\"first\":0,\"name\":\"Rusted Abyss Scarab\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Rusted Metamorph Scarab\",\"second\":0,\"third\":false},{\"count\":108,\"first\":0,\"name\":\"Vaal Orb\",\"second\":0,\"third\":false},{\"count\":24,\"first\":0,\"name\":\"Rusted Shaper Scarab\",\"second\":0,\"third\":false},{\"count\":28,\"first\":0,\"name\":\"Regal Orb\",\"second\":0,\"third\":false},{\"count\":13,\"first\":0,\"name\":\"Scrap Metal\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"Screaming Essence of Zeal\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Screaming Essence of Scorn\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Pristine Fossil\",\"second\":0,\"third\":false},{\"count\":16,\"first\":0,\"name\":\"Screaming Essence of Anger\",\"second\":0,\"third\":false},{\"count\":17,\"first\":0,\"name\":\"Gemcutter's Prism\",\"second\":0,\"third\":false},{\"count\":13,\"first\":0,\"name\":\"Aberrant Fossil\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Screaming Essence of Woe\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Tempering Catalyst\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Astragali\",\"second\":0,\"third\":false},{\"count\":6,\"first\":0,\"name\":\"Screaming Essence of Dread\",\"second\":0,\"third\":false},{\"count\":86,\"first\":0,\"name\":\"Orb of Regret\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"Screaming Essence of Hatred\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Screaming Essence of Wrath\",\"second\":0,\"third\":false},{\"count\":42,\"first\":0,\"name\":\"Blessed Orb\",\"second\":0,\"third\":false},{\"count\":44,\"first\":0,\"name\":\"Enkindling Orb\",\"second\":0,\"third\":false},{\"count\":764,\"first\":0,\"name\":\"Timeless Maraketh Splinter\",\"second\":0,\"third\":false},{\"count\":1086,\"first\":0,\"name\":\"Timeless Templar Splinter\",\"second\":0,\"third\":false},{\"count\":13,\"first\":0,\"name\":\"Frigid Fossil\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Scorched Fossil\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Screaming Essence of Sorrow\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Screaming Essence of Rage\",\"second\":0,\"third\":false},{\"count\":12,\"first\":0,\"name\":\"Screaming Essence of Fear\",\"second\":0,\"third\":false},{\"count\":10,\"first\":0,\"name\":\"Screaming Essence of Spite\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Metallic Fossil\",\"second\":0,\"third\":false},{\"count\":10,\"first\":0,\"name\":\"Screaming Essence of Misery\",\"second\":0,\"third\":false},{\"count\":19,\"first\":0,\"name\":\"Splinter of Esh\",\"second\":0,\"third\":false},{\"count\":82,\"first\":0,\"name\":\"Lesser Eldritch Ichor\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Splinter of Tul\",\"second\":0,\"third\":false},{\"count\":15,\"first\":0,\"name\":\"Splinter of Xoph\",\"second\":0,\"third\":false},{\"count\":65,\"first\":0,\"name\":\"Instilling Orb\",\"second\":0,\"third\":false},{\"count\":63,\"first\":0,\"name\":\"Glassblower's Bauble\",\"second\":0,\"third\":false},{\"count\":8,\"first\":0,\"name\":\"Screaming Essence of Anguish\",\"second\":0,\"third\":false},{\"count\":7,\"first\":0,\"name\":\"Screaming Essence of Torment\",\"second\":0,\"third\":false},{\"count\":580,\"first\":0,\"name\":\"Orb of Fusing\",\"second\":0,\"third\":false},{\"count\":359,\"first\":0,\"name\":\"Orb of Chance\",\"second\":0,\"third\":false},{\"count\":81,\"first\":0,\"name\":\"Cartographer's Chisel\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Screaming Essence of Suffering\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Sacrifice at Dusk\",\"second\":0,\"third\":false},{\"count\":1119,\"first\":0,\"name\":\"Timeless Vaal Splinter\",\"second\":0,\"third\":false},{\"count\":1308,\"first\":0,\"name\":\"Timeless Eternal Empire Splinter\",\"second\":0,\"third\":false},{\"count\":1429,\"first\":0,\"name\":\"Timeless Karui Splinter\",\"second\":0,\"third\":false},{\"count\":589,\"first\":0,\"name\":\"Simulacrum Splinter\",\"second\":0,\"third\":false},{\"count\":400,\"first\":0,\"name\":\"Orb of Alteration\",\"second\":0,\"third\":false},{\"count\":762,\"first\":0,\"name\":\"Jeweller's Orb\",\"second\":0,\"third\":false},{\"count\":88,\"first\":0,\"name\":\"Orb of Alchemy\",\"second\":0,\"third\":false},{\"count\":30,\"first\":0,\"name\":\"Orb of Augmentation\",\"second\":0,\"third\":false}],\"name\":\"Crimson Temple\"},{\"allCount\":0,\"avgTime\":0.0,\"name\":\"Highgate\"},{\"allCount\":0,\"avgTime\":0.0,\"items\":[{\"count\":1,\"first\":0,\"name\":\"Screaming Invitation\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Fracturing Shard\",\"second\":0,\"third\":false},{\"count\":10,\"first\":0,\"name\":\"Gilded Divination Scarab\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Ornate Incubator\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Diviner's Incubator\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Polished Legion Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Armoursmith's Delirium Orb\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Polished Divination Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Awakened Sextant\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Gilded Legion Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Cartographer\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Lord of Celebration\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Gilded Shaper Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Kalguuran Incubator\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Hubris\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Arena Champion\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Three Voices\",\"second\":0,\"third\":false},{\"count\":17,\"first\":0,\"name\":\"Stacked Deck\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Legion Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Rusted Divination Scarab\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Timeless Karui Emblem\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Timeless Eternal Emblem\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"The Trial\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Maddening Incubator\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Polished Expedition Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Polished Elder Scarab\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Polished Sulphite Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Ambush Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Rusted Bestiary Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Polished Shaper Scarab\",\"second\":0,\"third\":false},{\"count\":26,\"first\":0,\"name\":\"Annulment Shard\",\"second\":0,\"third\":false},{\"count\":9,\"first\":0,\"name\":\"Chaos Orb\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Rusted Harbinger Scarab\",\"second\":0,\"third\":false},{\"count\":11,\"first\":0,\"name\":\"Orb of Scouring\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Orb of Unmaking\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Dense Fossil\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Rusted Cartography Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Sulphite Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Breach Scarab\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Rusted Torment Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Reliquary Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Jagged Fossil\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Rusted Blight Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Abyss Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Rusted Metamorph Scarab\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Vaal Orb\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Rusted Shaper Scarab\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Screaming Essence of Scorn\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Pristine Fossil\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Gemcutter's Prism\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Orb of Regret\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Screaming Essence of Hatred\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Blessed Orb\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Enkindling Orb\",\"second\":0,\"third\":false},{\"count\":72,\"first\":0,\"name\":\"Timeless Templar Splinter\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Screaming Essence of Sorrow\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Metallic Fossil\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Scorched Fossil\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Timeless Maraketh Splinter\",\"second\":0,\"third\":false},{\"count\":1,\"first\":0,\"name\":\"Frigid Fossil\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Lesser Eldritch Ichor\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Instilling Orb\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Glassblower's Bauble\",\"second\":0,\"third\":false},{\"count\":2,\"first\":0,\"name\":\"Screaming Essence of Torment\",\"second\":0,\"third\":false},{\"count\":21,\"first\":0,\"name\":\"Orb of Fusing\",\"second\":0,\"third\":false},{\"count\":26,\"first\":0,\"name\":\"Cartographer's Chisel\",\"second\":0,\"third\":false},{\"count\":14,\"first\":0,\"name\":\"Timeless Vaal Splinter\",\"second\":0,\"third\":false},{\"count\":42,\"first\":0,\"name\":\"Timeless Karui Splinter\",\"second\":0,\"third\":false},{\"count\":85,\"first\":0,\"name\":\"Timeless Eternal Empire Splinter\",\"second\":0,\"third\":false},{\"count\":23,\"first\":0,\"name\":\"Simulacrum Splinter\",\"second\":0,\"third\":false},{\"count\":5,\"first\":0,\"name\":\"Jeweller's Orb\",\"second\":0,\"third\":false}],\"name\":\"The Sarn Encampment\"},{\"allCount\":1,\"avgTime\":0.18000000715255737,\"items\":[{\"count\":1,\"first\":0,\"name\":\"Chaos Orb\",\"second\":0,\"third\":false},{\"count\":3,\"first\":0,\"name\":\"Timeless Maraketh Splinter\",\"second\":0,\"third\":false},{\"count\":4,\"first\":0,\"name\":\"Orb of Fusing\",\"second\":0,\"third\":false}],\"name\":\"Walled-off Ducts\"}]}"
+}
+
+###
+POST http://localhost:8081/api/statistics/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIyM0haNUMzUlo4VkZaNEdRWkJEOFlFQ08yRVBMOEtEUiIsImhkX2lkIjoic3Nzc3Nzc2FBREFTREFTREFTREFTREFTIiwiaWF0IjoxNjg0ODYyNTkyLCJleHAiOjE2ODU3NjI1OTJ9.Pv2WS2wopmYRUBch_JRs0hU4g9JFNlghkggG7J_OVyY
+Content-Type: application/json
+
+{
+    "key":"8R98ZFOKZJ63ZMRE1IWOF2GJWETTITQX",
+    "hd_id":"xxx",
+    "id":"40cc5465-e692-4847-98f8-0bff15459dc6"
+}
+
+POST https://api3.urdy.store/api/v2/file/get/encrypted_binary
+Content-Type: application/json
+
+{
+    "key":"23HZ5C3RZ8VFZ4GQZBD8YECO2EPL8KDR",
+    "hd_id":"sssssssaADASDASDASDASDAS",
+    "code":"POEBT",
+    "name":"a.exe"
+}
